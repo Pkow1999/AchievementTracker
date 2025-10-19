@@ -35,7 +35,8 @@ public class AchievementTracker {
         this.nameOfLastAchievement = achievementList
                 .stream()
                 .max(Comparator.comparing(Achievement::getUnlocktime))
-                .orElse(Achievement.builder().build())
+                .filter(achievement -> achievement.getAchieved() > 0)
+                .orElse(Achievement.builder().name("").build())
                 .getName();
     }
 }
