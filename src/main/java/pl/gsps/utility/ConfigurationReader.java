@@ -11,7 +11,7 @@ public abstract class ConfigurationReader {
             properties = new Properties();
             properties.load(new FileInputStream(Constants.CONFIG_FILE_PATH));
         } catch (Exception e) {
-            System.out.println("Cannot find key: " + key + "in Config file due to exception: " + e);
+            System.out.println("Cannot find key: " + key + " in Config file due to exception: " + e);
         }
         return properties.getProperty(key).trim();
     }
