@@ -1,6 +1,12 @@
 package pl.gsps.models;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.extern.jackson.Jacksonized;
 
-public record PlayerAchievements(
-        Playerstats playerstats
-) { }
+@Data
+@Builder
+@Jacksonized
+public class PlayerAchievements {
+    private Playerstats playerstats;
+}
