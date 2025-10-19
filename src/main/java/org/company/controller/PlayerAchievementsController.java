@@ -1,9 +1,9 @@
-package pl.gsps.controller;
+package org.company.controller;
 
 import okhttp3.*;
-import pl.gsps.models.PlayerAchievements;
-import pl.gsps.service.AchievementsService;
-import pl.gsps.utility.ConfigurationReader;
+import org.company.models.PlayerAchievements;
+import org.company.service.AchievementsService;
+import org.company.utility.ConfigurationReader;
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;

@@ -1,4 +1,4 @@
-package pl.gsps;
+package org.company;
 
 import java.io.IOException;
 import java.nio.file.Files;

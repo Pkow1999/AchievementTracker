@@ -1,8 +1,8 @@
-package pl.gsps;
+package org.company;
 
 import lombok.Getter;
-import pl.gsps.controller.PlayerAchievementsController;
-import pl.gsps.models.Achievement;
+import org.company.controller.PlayerAchievementsController;
+import org.company.models.Achievement;
 
 import java.util.Comparator;
 import java.util.List;

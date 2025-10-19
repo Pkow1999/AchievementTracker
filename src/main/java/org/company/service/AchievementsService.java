@@ -1,6 +1,6 @@
-package pl.gsps.service;
+package org.company.service;
 
-import pl.gsps.models.PlayerAchievements;
+import org.company.models.PlayerAchievements;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

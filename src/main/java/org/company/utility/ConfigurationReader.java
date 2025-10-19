@@ -1,4 +1,4 @@
-package pl.gsps.utility;
+package org.company.utility;
 
 import java.io.FileInputStream;
 import java.util.Properties;

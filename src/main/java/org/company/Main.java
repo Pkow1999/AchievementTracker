@@ -1,6 +1,6 @@
-package pl.gsps;
+package org.company;
 
-import pl.gsps.utility.ConfigurationReader;
+import org.company.utility.ConfigurationReader;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;

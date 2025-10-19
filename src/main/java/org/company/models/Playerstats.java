@@ -1,4 +1,4 @@
-package pl.gsps.models;
+package org.company.models;
 
 import lombok.Builder;
 import lombok.Data;
