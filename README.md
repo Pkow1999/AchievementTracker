@@ -2,7 +2,7 @@
 Java App for tracking number of completed achievments in game and writing this value to a file.
 
 Requirements:
-- Java 8+
+- Java 8+/[JRE](https://www.java.com/pl/download/manual.jsp)
 
 **Remember** to create Configuration/Config.properties file in the folder with .jar file.
 
