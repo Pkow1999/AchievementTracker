@@ -10,7 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public class PlayerAchievementsController {
-    private final String BASE_URI = ConfigurationReader.readConfigurationFile("BASE_URI");
+    private final String BASE_API_URL = ConfigurationReader.readConfigurationFile("BASE_API_URL");
     private final String API_KEY = ConfigurationReader.readConfigurationFile("API_KEY");
     private final String GAME_ID = ConfigurationReader.readConfigurationFile("GAME_ID");
     private final String PLAYER_ID = ConfigurationReader.readConfigurationFile("STEAM_ID");
@@ -37,7 +37,7 @@ public class PlayerAchievementsController {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URI)
+                .baseUrl(BASE_API_URL)
                 .addConverterFactory(JacksonConverterFactory.create())
                 .client(client)
                 .build();
