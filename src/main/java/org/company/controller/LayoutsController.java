@@ -25,6 +25,7 @@ public class LayoutsController {
     private void setupService(String LAYOUTS_URL) {
 
         OkHttpClient client = new OkHttpClient.Builder()
+                .cache(null)
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()

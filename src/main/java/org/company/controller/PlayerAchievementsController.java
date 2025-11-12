@@ -34,6 +34,7 @@ public class PlayerAchievementsController {
 
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(clientInterceptor)
+                .cache(null)
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -54,7 +55,9 @@ public class PlayerAchievementsController {
                     .addQueryParameter("steamid", PLAYER_ID)
                     .addQueryParameter("l", "en")
                     .build();
-            request = request.newBuilder().url(url).build();
+            request = request.newBuilder()
+                    .url(url)
+                    .build();
             return chain.proceed(request);
         };
     }
